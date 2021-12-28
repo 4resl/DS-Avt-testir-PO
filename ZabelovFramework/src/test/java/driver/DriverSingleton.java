@@ -22,7 +22,7 @@ public class DriverSingleton {
                     driver = new FirefoxDriver(firefoxOptions);
                 }
                 default: {
-                    WebDriverManager.Chromedriver().version("96.0.4664.45").setup();
+                    WebDriverManager.chromedriver().version("96.0.4664.45").setup();
                     ChromeOptions chromeOptions = new ChromeOptions();
                     chromeOptions.addArguments("--no-sandbox", "--disable-dev-shm-usage", "--window-size=1920,1080",
                             "--disable-extensions", "--proxy-server='direct://'", "--proxy-bypass-list=*", "--start-maximized",
