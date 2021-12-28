@@ -16,7 +16,7 @@ public class DriverSingleton {
         if(null == driver){
             switch (System.getProperty("browser")){
                 case "firefox":{
-                    WebDriverManager.firefoxdriver().setup();
+                    WebDriverManager.firefoxdriver().version("96.0.4664.45").setup();
                     FirefoxOptions firefoxOptions = new FirefoxOptions();
                     firefoxOptions.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
                     driver = new FirefoxDriver(firefoxOptions);
